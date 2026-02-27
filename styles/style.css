@@ -104,13 +104,15 @@ html {
   max-width: 196px;
   flex-grow: 1;
 }
+
+.content__video-card-title:active {
+  text-decoration: none;
+}
+
 .content__video-card-title:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
   text-decoration-thickness: 1px;
-}
-.content__video-card-title:active {
-  text-decoration: none;
 }
 
 .content__video-card-description:hover {
@@ -155,7 +157,6 @@ html {
   font-family: inherit;
   width: auto;
   height: auto;
-  display: flex;
 }
 
 .content__card-link {
@@ -163,6 +164,7 @@ html {
   color: white;
   text-decoration: none;
 }
+
 .content__card-link:active {
   background-color: #545050;
 }
@@ -253,11 +255,6 @@ html {
 
 .search-form__textfield:focus {
   outline: none;
-}
-
-.search-form__label:has(:focus-visible) {
-  outline: 1px solid white;
-  outline-offset: 1;
 }
 
 .search-form__textfield::placeholder {
